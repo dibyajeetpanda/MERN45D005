@@ -1,0 +1,175 @@
+
+p{
+    /* background-color: blue; */
+}
+
+h1{
+    background-color: red;
+}
+
+
+
+/* selectors */
+/* 1. simple selector
+   2. Combinator selector
+   3. Pseudo-class selector
+   4. Pseudo-element selector
+   5. attribute selector
+
+*/
+
+
+/* 
+  1.simple  slector
+     =>id selector
+     => class name selector
+     => tag name selector
+     => group name selector
+     => universal selector
+  2. Combinator selector
+     => Descedent selector
+     => direct child selector
+     => adjacent selector
+     =>general sibling
+
+*/
+
+/* Id selector */
+#h2-tag{
+    background-color: hotpink;
+}
+
+/* class name selector */
+.para{
+    /* background-color: yellow; */
+}
+
+/* tag name selector */
+p{
+    /* background-color: green; */
+}
+
+/* group selector */
+h1,p,h2{
+ /* color: chartreuse; */
+}
+/* universal selector */
+
+*{
+    /* font-family: monospace; */
+}
+
+/* descedent selector */
+/* .parent p{
+ background-color: blue;
+} */
+
+/* direct child */
+/* .parent>p{
+background-color: blue;
+} */
+
+
+/* adjascent selector */
+/* .parent+p{
+    background-color: aqua;
+}
+
+
+.parent ~ p{
+    background-color: brown;
+} */
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: 2px solid black;
+    transition: all 2s;
+}
+
+/* pseudo class selector */
+.box:hover{
+    background-color: brown;
+    rotate: 45deg;
+}
+
+button{
+    background-color: chartreuse;
+}
+button:active{
+    background-color: crimson;
+}
+
+input:focus{
+    background-color: darkred;
+}
+
+li:first-child{
+    background-color: aqua;
+}
+
+li:last-child{
+    background-color: brown;
+}
+
+li:nth-child(even){
+    background-color: blue;
+}
+
+.add-image{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: url("https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.box-model{
+    width: 250px;
+    /* height: 250px; */
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: black; */
+    border: 2px solid black;
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px; */
+    padding: 20px 30px 30px 20px;
+    margin: 20px 0 40px 50px;
+}
+
+#para1{
+    background-color: red;
+    display: inline;
+    width: 500px;
+}
+
+#span1{
+    background-color: blue;
+    display: block;
+    width: 300px;
+}
+
+.container{
+    width: 500px;
+    height: 300px;
+    border: 2px solid blue;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5px;
+     justify-content: center;
+    align-items: center; 
+}
+
+.box-items{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
